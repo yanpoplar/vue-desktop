@@ -1,0 +1,144 @@
+@charset "UTF-8";
+.schedulemanage .page-changeCourse {
+  width: 100%;
+  height: 100%;
+  padding-top: 51px;
+}
+.schedulemanage .page-changeCourse .con-header {
+  padding: 20px 24px 0;
+}
+.schedulemanage .page-changeCourse .con-main {
+  padding: 10px 24px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.schedulemanage .page-changeCourse .con-main .txt {
+  padding: 15px 0;
+}
+.schedulemanage .page-changeCourse .con-main .txt span {
+  padding: 0 15px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #000;
+}
+.schedulemanage .page-changeCourse .con-main .txt .color-red {
+  color: #ff3640;
+}
+.schedulemanage .page-adjustCourse {
+  width: 100%;
+  height: 100%;
+  padding-top: 51px;
+}
+.schedulemanage .page-adjustCourse .con-main {
+  position: relative;
+  height: 100%;
+  padding-top: 66px;
+}
+.schedulemanage .page-adjustCourse .con-main .my-tit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 66px;
+  padding: 18px 24px 0 44px;
+}
+.schedulemanage .page-adjustCourse .con-main .my-tit .row-l {
+  width: 25%;
+}
+.schedulemanage .page-adjustCourse .con-main .my-tit .row-r {
+  width: 75%;
+}
+.schedulemanage .page-adjustCourse .con-main .my-tit .tip-list {
+  width: 100%;
+  text-align: right;
+}
+.schedulemanage .page-adjustCourse .con-main .my-tit .tip-list li {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.schedulemanage .page-adjustCourse .con-main .my-tit .tip-list li .color-block {
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.schedulemanage .page-adjustCourse .con-main .my-tit .tip-list li .txt {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 30px;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table {
+  height: 100%;
+  padding: 10px 24px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .cell {
+  width: 100%;
+  height: 26px;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .cell-main {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .hover-row > td {
+  background-color: transparent;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--border th {
+  border: none;
+  background: #1b8cff;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--border th .cell {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table::before,
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table::after {
+  background-color: #f5f5f5;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--group,
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--border {
+  border-color: #f5f5f5;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--border td {
+  border-color: #f5f5f5;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--border .el-table__header-wrapper th {
+  border-right: 1px solid #fff;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--border .el-table__header-wrapper th .cell {
+  font-size: 16px;
+  font-weight: noraml;
+  color: #fff;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--border .el-table__header-wrapper thead tr:first-child th {
+  border-bottom: 1px solid #fff;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--border .el-table__header-wrapper thead tr:first-child th:first-child {
+  border-right: 1px solid #fff;
+  border-bottom: none;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--border .el-table__fixed-header-wrapper thead tr:first-child th {
+  border-bottom: 1px solid #fff;
+}
+.schedulemanage .page-adjustCourse .con-main .my-table .el-table--border .el-table__fixed-header-wrapper thead tr:first-child th:first-child {
+  border-right: 1px solid #fff;
+  border-bottom: none;
+}
+.schedulemanage .colorcur {
+  background-color: #81e345;
+}
+.schedulemanage .colorcan {
+  background-color: #fffd62;
+}
+.schedulemanage .colorno {
+  border: 1px solid #f5f5f5;
+}
+.schedulemanage .colorother {
+  background-color: #73f3ff;
+}

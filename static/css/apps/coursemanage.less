@@ -1,0 +1,543 @@
+            @charset "UTF-8";
+            @color-main: #1b8cff;
+            @color-light: #71beff;
+            @FontFamily: 'Microsoft Yahei',
+            Helvetica,
+            Arial,
+            sans-serif;
+            .font-style (@lineHeight: 1em, @fontSize: 16px, @fontWeight: normal, @textAlign: left, @color: #000) {
+                line-height: @lineHeight;
+                font-size: @fontSize;
+                font-weight: @fontWeight;
+                text-align: @textAlign;
+                color: @color;
+            }
+
+            .coursemanage {
+                .search-block {
+                    .search-val {
+                        width: 194px;
+                        height: 30px;
+                        .el-input {
+                            height: 100%;
+                        }
+                        .el-input__inner {
+                            height: 100%;
+                        }
+                    }
+                    .search-type {
+                        width: 160px;
+                        height: 30px;
+                        margin-left: 15px;
+                        .el-select {
+                            height: 100%;
+                        }
+                        .el-input {
+                            height: 100%;
+                        }
+                        .el-input__inner {
+                            height: 100%;
+                        }
+                    }
+                }
+                .page-step {
+                    height: 100%;
+                    padding: 50px 24px 38px 44px;
+                    .singleSetPage {
+                        padding-top: 20px;
+                    }
+                }
+            }
+
+            .step-page {
+                padding-bottom: 50px;
+                .steps-footer {
+                    height: 50px;
+                    padding-top: 15px;
+                } //流程导入界面第一步
+                .steps-tit-l {
+                    padding-left: 71px;
+                }
+                .steps-tit-r {
+                    padding-right: 71px;
+                }
+                .steps-tit-l-l {
+                    float: left;
+                    width: 50%;
+                    padding-left: 71px;
+                    padding-right: 71px;
+                }
+                .steps-tit-l-r {
+                    float: left;
+                    width: 50%;
+                    padding-left: 71px;
+                    padding-right: 71px;
+                }
+                .step-one {
+                    top: 30px;
+                    left: 0;
+                    width: 142px;
+                }
+                .step-two {
+                    top: 30px;
+                    left: 25%;
+                    width: 142px;
+                    margin-left: -35px;
+                }
+                .step-three {
+                    top: 30px;
+                    left: 50%;
+                    width: 142px;
+                    margin-left: -71px;
+                }
+                .step-four {
+                    top: 30px;
+                    left: 75%;
+                    width: 142px;
+                    margin-left: -106px;
+                }
+                .step-five {
+                    top: 30px;
+                    right: 0;
+                    width: 142px;
+                }
+                .steps-main-one {
+                    overflow: hidden;
+                    overflow-y: auto;
+                    .dividing {
+                        width: 86%;
+                        margin: 0 auto;
+                        .adminCourse,
+                        .teachCourse {
+                            width: 100%;
+                            .tit {
+                                width: 100%;
+                                height: 44px;
+                                padding-left: 20px;
+                                .font-style(44px, 18px, bolder, left, #fff);
+                            }
+                        }
+                        .adminCourse .tit {
+                            background-color: @color-main;
+                        }
+                        .teachCourse .tit {
+                            background-color: @color-light;
+                        }
+                        .adminCourse-main,
+                        .teachCourse-main {
+                            position: relative;
+                            width: 100%;
+                            overflow: hidden;
+                            .course-main-l,
+                            .course-main-r {
+                                padding-left: 20px;
+                            }
+                            .course-main-l {
+                                width: 50%;
+                                border: 1px solid #f5f5f5;
+                                border-right-color: transparent;
+                                border-top: none;
+                                .name-txt {
+                                    user-select: none;
+                                    margin-bottom: 6px;
+                                    .font-style(40px, 18px, bolder, left, @color-light);
+                                }
+                                &:hover {
+                                    border-color: @color-main;
+                                }
+                            }
+                            .course-main-r {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 50%;
+                                height: 100%;
+                                border: 1px solid #f5f5f5;
+                                border-top: none;
+                                .name-txt {
+                                    user-select: none;
+                                    margin-bottom: 6px;
+                                    .font-style(40px, 18px, bolder, left, @color-main);
+                                }
+                                &:hover {
+                                    border-color: @color-main;
+                                }
+                                .course-list {
+                                    &>li {
+                                        background-color: @color-main;
+                                    }
+                                }
+                            }
+                            .course-list {
+                                width: 100%;
+                                min-height: 210px;
+                                overflow: hidden;
+                                &>li {
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    height: 26px;
+                                    padding: 0 5px;
+                                    margin-right: 10px;
+                                    margin-bottom: 10px;
+                                    border-radius: 5px;
+                                    .font-style(26px, 16px, bold, center, #fff);
+                                    background-color: @color-light;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
+                .steps-main-two {
+                    overflow: hidden;
+                    overflow-y: auto;
+                    .dividing {
+                        width: 86%;
+                        margin: 0 auto;
+                        .teachCourse {
+                            width: 100%;
+                            margin-top: 15px;
+                            .tit {
+                                width: 100%;
+                                height: 44px;
+                                padding-left: 20px;
+                                .font-style(44px, 18px, bolder, left, #fff);
+                            }
+                        }
+                        .teachCourse .tit {
+                            background-color: @color-light;
+                        }
+                        .teachCourse-main {
+                            position: relative;
+                            width: 100%;
+                            overflow: hidden;
+                            .course-main-l,
+                            .course-main-r {
+                                padding-left: 20px;
+                            }
+                            .course-main-l {
+                                width: 50%;
+                                border: 1px solid #f5f5f5;
+                                border-right-color: transparent;
+                                border-top-color: transparent;
+                                .name-txt {
+                                    margin-bottom: 6px;
+                                    .font-style(40px, 18px, bolder, left, @color-light);
+                                }
+                            }
+                            .course-main-r {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 50%;
+                                height: 100%;
+                                border: 1px solid #f5f5f5;
+                                border-top-color: transparent;
+                                .name-txt {
+                                    margin-bottom: 6px;
+                                    .font-style(40px, 18px, bolder, left, @color-main);
+                                }
+                                .course-list {
+                                    &>li {
+                                        background-color: @color-main;
+                                    }
+                                }
+                            }
+                            .course-list {
+                                width: 100%;
+                                min-height: 210px;
+                                overflow: hidden;
+                                &>li {
+                                    display: inline-block;
+                                    min-width: 75px;
+                                    height: 26px;
+                                    padding: 0 5px;
+                                    margin-right: 10px;
+                                    margin-bottom: 10px;
+                                    border-radius: 5px;
+                                    .font-style(26px, 16px, bold, center, #fff);
+                                    background-color: @color-light;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                        .js-teachCourse {
+                            .course-main-l:hover {
+                                border-color: @color-main;
+                            }
+                            .course-main-r:hover {
+                                border-color: @color-main;
+                            }
+                        }
+                    }
+                }
+                .steps-main-three {
+                    position: relative;
+                    padding-top: 35px;
+                    .row {
+                        overflow: hidden;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                    }
+                    .select-page {
+                        position: relative;
+                        height: 100%;
+                        padding-top: 50px;
+                        .btn-row {
+                            position: absolute;
+                            top: 10px;
+                            left: 0;
+                            width: 100%;
+                            overflow: hidden;
+                            .search-block {
+                                float: left;
+                                width: 50%;
+                                text-align: left;
+                                .txt {
+                                    width: 80px;
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    text-align: right;
+                                    color: #000;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                    .file-page {
+                        position: relative;
+                        height: 100%;
+                        .steps-main-one {
+                            position: relative;
+                            padding-bottom: 50px;
+                            .steps-main-con {
+                                overflow: hidden;
+                            }
+                            .steps-footer-one {
+                                padding-top: 10px;
+                                text-align: center;
+                            }
+                        }
+                        .steps-main-two {
+                            position: relative;
+                            padding-bottom: 50px;
+                            overflow: hidden;
+                            .steps-footer-two {
+                                padding-top: 0;
+                            }
+                        }
+                    }
+                    .steps-main-con {
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        overflow-y: auto;
+                    }
+                }
+                .steps-main-four {
+                    .file-page {
+                        position: relative;
+                        height: 100%;
+                        .steps-main-one {
+                            position: relative;
+                            padding-bottom: 50px;
+                            .steps-main-con {
+                                overflow: hidden;
+                            }
+                            .steps-footer-one {
+                                padding-top: 10px;
+                                text-align: center;
+                            }
+                        }
+                        .steps-main-two {
+                            position: relative;
+                            padding-bottom: 50px;
+                            overflow: hidden;
+                            .steps-footer-two {
+                                padding-top: 0;
+                            }
+                        }
+                    }
+                }
+                .steps-main-five {
+                    .success-info {
+                        margin-top: 20%;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #000;
+                        text-align: center;
+                        span {
+                            color: #ff3640;
+                        }
+                    }
+                }
+            }
+
+            .page-repeort {
+                position: relative;
+                height: 100%;
+                padding: 240px 12px 0 12px;
+                overflow: hidden;
+                .circle-list {
+                    position: absolute;
+                    top: 20px;
+                    left: 0;
+                    width: 100%;
+                    overflow: hidden;
+                    .circle-img {
+                        position: relative;
+                        float: left;
+                        width: 33%;
+                        text-align: center;
+                        .text-block {
+                            position: absolute;
+                            top: 80px;
+                            left: 50%;
+                            width: 300px;
+                            margin-top: -28px;
+                            margin-left: -150px;
+                            .txt {
+                                width: 100%;
+                                .font-style(30px, 18px, bold, center, #79d242);
+                            }
+                            .num {
+                                font-size: 24px;
+                            }
+                            .txt-two {
+                                color: #71beff;
+                            }
+                            .txt-three {
+                                color: #ffcd53;
+                            }
+                        }
+                        .time-tit {
+                            width: 100%;
+                            .font-style(26px, 16px, bold, center, #656565);
+                        }
+                        .time-val {
+                            width: 100%;
+                            .font-style(24px, 14px, normal, center, #656565);
+                        }
+                    }
+                }
+                .row {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    height: 100%;
+                    .row-l,
+                    .row-r {
+                        height: 100%;
+                    }
+                }
+            }
+
+            .group-detail {
+                width: 90%;
+                margin: 0 auto;
+                .my-header {
+                    overflow: hidden;
+                    li {
+                        float: left;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #000;
+                        text-align: center;
+                    }
+                }
+                .my-body {
+                    width: 100%;
+                    height: 400px;
+                    overflow: hidden;
+                    overflow-y: auto;
+                }
+                .my-table {
+                    width: 100%;
+                    &:last-child {
+                        .tit {
+                            border: 1px solid @color-main;
+                        }
+                    }
+                    .tit {
+                        overflow: hidden;
+                        border: 1px solid @color-main;
+                        border-bottom: none;
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #000;
+                        text-align: center;
+                        .row-l {
+                            width: 15%;
+                            text-align: center;
+                        }
+                        .row-r {
+                            i {
+                                margin-right: 20px;
+                                color: #000;
+                            }
+                        }
+                    }
+                    .active {
+                        background-color: @color-main;
+                        color: #fff;
+                        .row-r {
+                            i {
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .my-data {
+                        border: 1px solid #f5f5f5;
+                        border-top: none;
+                        li {
+                            width: 100%;
+                            margin-bottom: 10px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            .data-list {
+                                width: 100%;
+                                overflow: hidden;
+                                li {
+                                    float: left;
+                                    height: 40px;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    line-height: 40px;
+                                    color: #000;
+                                }
+                                li.class-name {
+                                    padding: 6px 0;
+                                    .name-val {
+                                        width: 50%;
+                                        height: 100%;
+                                        margin: 0 auto;
+                                        border-radius: 5px;
+                                        font-size: 16px;
+                                        line-height: 28px;
+                                        text-align: center;
+                                        color: #fff;
+                                        background-color: #1ab6ff;
+                                    }
+                                }
+                                li.per-bar {
+                                    padding: 15px 0;
+                                    .bigbar {
+                                        width: 80%;
+                                        height: 10px;
+                                        margin: 0 auto;
+                                        border-radius: 5px;
+                                        background-color: #e5e5e5;
+                                        .smallbar {
+                                            height: 100%;
+                                            border-radius: 5px;
+                                            background-color: #1ab6ff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }

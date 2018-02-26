@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.coursemanage .search-block .search-val {
+  width: 194px;
+  height: 30px;
+}
+.coursemanage .search-block .search-val .el-input {
+  height: 100%;
+}
+.coursemanage .search-block .search-val .el-input__inner {
+  height: 100%;
+}
+.coursemanage .search-block .search-type {
+  width: 160px;
+  height: 30px;
+  margin-left: 15px;
+}
+.coursemanage .search-block .search-type .el-select {
+  height: 100%;
+}
+.coursemanage .search-block .search-type .el-input {
+  height: 100%;
+}
+.coursemanage .search-block .search-type .el-input__inner {
+  height: 100%;
+}
+.coursemanage .page-step {
+  height: 100%;
+  padding: 50px 24px 38px 44px;
+}
+.coursemanage .page-step .singleSetPage {
+  padding-top: 20px;
+}

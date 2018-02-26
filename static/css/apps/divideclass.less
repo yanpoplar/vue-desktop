@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@color-main: #1b8cff;
+@color-light: #71beff;
+@color-red: #ff3640;
+@FontFamily: 'Microsoft Yahei',
+Helvetica,
+Arial,
+sans-serif;
+.font-style (@lineHeight: 1em, @fontSize: 16px, @fontWeight: normal, @textAlign: left, @color: #000) {
+    line-height: @lineHeight;
+    font-size: @fontSize;
+    font-weight: @fontWeight;
+    text-align: @textAlign;
+    color: @color;
+}
+
+.divideclass {
+    .page-divide {
+        width: 100%;
+        height: 100%;
+        padding-top: 51px;
+        .con-header {
+            padding: 20px 24px 0;
+        }
+        .con-main {
+            padding: 10px 24px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            .txt {
+                padding: 15px 0;
+                span {
+                    padding: 0 15px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    color: #000;
+                }
+                .color-red {
+                    color: @color-red;
+                }
+            }
+        }
+    }
+    .tit {
+        span {
+            margin-right: 8px;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+    }
+    .class-list {
+        position: relative;
+        right: -15px;
+        margin-top: 25px;
+        margin-bottom: 45px;
+        li.class-item {
+            position: relative;
+            float: left;
+            width: 183px;
+            margin-right: 30px;
+            margin-bottom: 15px;
+            box-shadow: rgba(204, 204, 204, 0.73) 0 0 0;
+            transition: all 1s;
+            -moz-transition: all 1s;
+            /* Firefox 4 */
+            -webkit-transition: all 1s;
+            /* Safari and Chrome */
+            -o-transition: all 1s;
+            /* Opera */
+            @box-radius: 5px;
+            .item-detail {
+                padding-left: 5px;
+                border-top-left-radius: @box-radius;
+                border-top-right-radius: @box-radius;
+                background-color: #fcfcfc;
+                .item-tit {
+                    width: 120px;
+                    height: 36px;
+                    padding-left: 5px;
+                    border-bottom: 1px dashed #b9b9b9;
+                    .font-style(36px, 16px, bold, left, #000);
+                }
+                .item-main {
+                    padding: 10px 5px;
+                    .item-main-txt {
+                        .font-style(24px, 14px, normal, left, #4c4c4c);
+                    }
+                }
+            }
+            .item-btn {
+                width: 100%;
+                height: 26px;
+                border-bottom-left-radius: @box-radius;
+                border-bottom-right-radius: @box-radius;
+                .font-style(26px, 16px, normal, center, #fff);
+                background-color: @color-light;
+                cursor: pointer;
+            }
+            &:hover {
+                box-shadow: rgba(204, 204, 204, 0.73) 0 0 10px;
+                -moz-box-shadow: rgba(204, 204, 204, 0.73) 0 0 10px;
+                -webkit-box-shadow: rgba(204, 204, 204, 0.73) 0 0 10px;
+                -o-box-shadow: rgba(204, 204, 204, 0.73) 0 0 10px;
+            }
+            .people {
+                position: absolute;
+                top: -7px;
+                right: 5px;
+                width: 40px;
+                height: 40px;
+                padding-right: 6px;
+                padding-top: 8px;
+                .font-style(30px, 12px, normal, center, #fff);
+                background: url("../../img/peoplenum.png") no-repeat center;
+                background-size: 100%;
+            }
+        }
+    }
+    .page-look {
+        height: 100%;
+        padding-top: 51px;
+        .con-header {
+            padding: 20px 24px 0;
+        }
+        .con-main {
+            padding: 10px 24px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    }
+}

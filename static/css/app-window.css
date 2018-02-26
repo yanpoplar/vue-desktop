@@ -1,0 +1,308 @@
+@charset "UTF-8";
+.app {
+  position: absolute;
+  z-index: 20;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.app.animating {
+  transition: all ease 0.5s;
+}
+.app .app-title {
+  position: relative;
+  background: #ffffff;
+  text-align: center;
+  line-height: 42px;
+  height: 42px;
+  font-size: 16px;
+  cursor: default;
+  color: #000;
+}
+.app .app-title .icon2 {
+  width: 2em;
+  height: 2em;
+  margin-right: 10px;
+  vertical-align: -0.7em;
+}
+.app.focus {
+  box-shadow: 0 0 20px rgba(179, 179, 179, 0.9);
+  z-index: 50;
+}
+.app .app-control {
+  position: absolute;
+  right: 18px;
+  top: 0;
+  height: 42px;
+}
+.app .app-control .c {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-top: 9px;
+  margin-right: 6px;
+  float: left;
+  border-radius: 3px;
+}
+.app .app-control .c1 {
+  background: #ffec4a;
+}
+.app .app-control .c1:before {
+  box-sizing: border-box;
+  content: "";
+  display: none;
+  position: absolute;
+  height: 2px;
+  width: 12px;
+  left: 6px;
+  bottom: 11px;
+  background: #fff;
+}
+.app .app-control .c1:hover:before {
+  display: block;
+}
+.app .app-control .c2 {
+  background: #81e345;
+}
+.app .app-control .c2 .icon3 {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  top: 2px;
+  color: #fff;
+}
+.app .app-control .c2:hover .icon3 {
+  display: block;
+}
+.app .app-control .c3 {
+  background: #ff3640;
+}
+.app .app-control .c3:before,
+.app .app-control .c3:after {
+  content: "";
+  display: none;
+  position: absolute;
+  height: 2px;
+  width: 14px;
+  left: 5px;
+  top: 11px;
+  background: #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+.app .app-control .c3:after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+.app .app-control .c3:hover:before,
+.app .app-control .c3:hover:after {
+  display: block;
+}
+.app .resize-handle {
+  position: absolute;
+}
+.app .resize-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.app .resize-handle-r {
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 4px;
+  cursor: e-resize;
+}
+.app .resize-handle-b {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  cursor: s-resize;
+}
+.app .resize-handle-l {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  cursor: w-resize;
+}
+.app .resize-handle-t {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  cursor: n-resize;
+}
+.app .resize-handle-br {
+  right: 0;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  cursor: se-resize;
+}
+.app .resize-handle-bl {
+  left: 0;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  cursor: sw-resize;
+}
+.app .resize-handle-tr {
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  cursor: ne-resize;
+}
+.app .resize-handle-tl {
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  cursor: nw-resize;
+}
+.thismain {
+  position: relative;
+  height: 100%;
+}
+.thismain .thisheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 38px;
+  width: 100%;
+  padding-top: 11px;
+  padding-left: 28px;
+  background: #71beff;
+}
+.thismain .thisheader ul {
+  height: 100%;
+  overflow: hidden;
+}
+.thismain .thisheader ul li {
+  display: inline-block;
+  height: 24px;
+  padding-left: 8px;
+  padding-right: 5px;
+  margin-right: 4px;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.thismain .thisheader ul .appmain .icon1 {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  fill: currentColor;
+  overflow: hidden;
+}
+.thismain .thisheader ul .appmain:hover .icon1 {
+  color: #1b8cff;
+}
+.thismain .thisheader ul .appmain.active .icon1 {
+  color: #1b8cff;
+}
+.thismain .thisheader ul .apptab {
+  border-radius: 3px;
+  color: #000;
+  background-color: #fbfbfb;
+}
+.thismain .thisheader ul .apptab .tabname {
+  vertical-align: middle;
+}
+.thismain .thisheader ul .apptab .icon2 {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  color: #000;
+  fill: currentColor;
+  overflow: hidden;
+}
+.thismain .thisheader ul .apptab.active {
+  height: 27px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+}
+.thismain .thisbody {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 38px 0 0;
+}
+.thismain .thisbody .app2-list {
+  box-sizing: border-box;
+  padding: 0 24px;
+  margin-right: -75px;
+  overflow: hidden;
+}
+.thismain .thisbody .app2-list li {
+  box-sizing: border-box;
+  float: left;
+  width: 110px;
+  margin-right: 75px;
+  margin-top: 24px;
+}
+.thismain .thisbody .app2-list li .app-icon {
+  width: 100%;
+  padding: 0 10px;
+}
+.thismain .thisbody .app2-list li .app-icon .icon-body {
+  width: 100%;
+  height: 76px;
+  font-size: 70px;
+  text-align: center;
+}
+.thismain .thisbody .app2-list li .app-icon .icon-body .icon {
+  vertical-align: 0;
+}
+.thismain .thisbody .app2-list li .app-name {
+  width: 100%;
+  margin-top: 7px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+.thismain .thisbody .app2-list li:hover .icon-body {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.thismain .thisbody .app2-list li:hover .app-name {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #000;
+}
+.thismain .thisbody .appcon {
+  height: 100%;
+}
+.app-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 38px;
+  background-color: #fafafa;
+}
+.app-footer .el-pagination {
+  margin-top: 8px;
+  padding: 0;
+  padding-right: 24px;
+  text-align: right;
+}
+.app-footer .log-import {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  height: 38px;
+  padding-top: 4px;
+}

@@ -1,0 +1,179 @@
+@charset "UTF-8";
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
+  background: url("../img/bj.jpg") no-repeat top center;
+  background-size: 100%;
+  filter: blur(20px);
+}
+.header-con {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+}
+.menu {
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.head-left {
+  float: left;
+}
+.head-left .logo {
+  width: 40px;
+  height: 40px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: url("../img/img.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+.head-left .item {
+  height: 40px;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  color: #0a0a0a;
+}
+.head-left .active {
+  color: #fff;
+  background-color: #000;
+}
+.app-list {
+  float: left;
+  padding: 0 5px;
+  overflow: hidden;
+}
+.app-list .app-item {
+  float: left;
+  width: 70px;
+  height: 40px;
+  margin-right: 2px;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: 40px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.app-list .actived {
+  background-color: #fff;
+}
+.head-right {
+  float: right;
+}
+.head-right .menu {
+  margin-right: 10px;
+}
+.head-right .item {
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px 0 0;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  color: #000;
+  vertical-align: middle;
+}
+.head-right .user-info {
+  position: relative;
+}
+.head-right .alarm {
+  position: relative;
+}
+.head-right .alarm .msgtip {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  z-index: 20;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgba(255, 54, 64, 0.4);
+}
+.head-right .alarm .msgtip .msg-cir {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 25;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ff3640;
+}
+.user-menu {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  width: 160px;
+}
+.user-menu ul {
+  width: 100%;
+  padding: 5px 0;
+  overflow: hidden;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 5px;
+}
+.user-menu ul .list-item {
+  cursor: default;
+  height: 25px;
+  padding: 0 15px;
+  overflow: hidden;
+  line-height: 25px;
+}
+.user-menu ul .list-item .name {
+  float: left;
+  font-size: 12px;
+  text-align: left;
+  color: #0a0a0a;
+}
+.user-menu ul .list-item .name .icon {
+  margin-right: 12px;
+}
+.user-menu ul .list-item .key {
+  float: right;
+  font-size: 12px;
+  text-align: right;
+  color: #999;
+}
+.user-menu ul .list-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.user-menu ul .list-item.disabled {
+  color: #999;
+}
+.user-menu ul .divide {
+  border-top: 1px solid #cdcdcd;
+  margin: 2px;
+  font-size: 0;
+  line-height: 0;
+}

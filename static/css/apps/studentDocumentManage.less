@@ -1,0 +1,51 @@
+            @charset "UTF-8";
+            @color-main: #1b8cff;
+            @color-light: #71beff;
+            @FontFamily: 'Microsoft Yahei',
+            Helvetica,
+            Arial,
+            sans-serif;
+            .font-style (@lineHeight: 1em, @fontSize: 16px, @fontWeight: normal, @textAlign: left, @color: #000) {
+                line-height: @lineHeight;
+                font-size: @fontSize;
+                font-weight: @fontWeight;
+                text-align: @textAlign;
+                color: @color;
+            }
+
+            .coursemanage {
+                .search-block {
+                    .search-val {
+                        width: 194px;
+                        height: 30px;
+                        .el-input {
+                            height: 100%;
+                        }
+                        .el-input__inner {
+                            height: 100%;
+                        }
+                    }
+                    .search-type {
+                        width: 160px;
+                        height: 30px;
+                        margin-left: 15px;
+                        .el-select {
+                            height: 100%;
+                        }
+                        .el-input {
+                            height: 100%;
+                        }
+                        .el-input__inner {
+                            height: 100%;
+                        }
+                    }
+                }
+                .page-step {
+                    height: 100%;
+                    padding: 50px 24px 38px 44px;
+                    .singleSetPage {
+                        padding-top: 20px;
+                    }
+                }
+            }
+

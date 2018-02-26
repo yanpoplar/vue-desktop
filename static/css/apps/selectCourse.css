@@ -1,0 +1,161 @@
+@charset "UTF-8";
+.selectCourse .thismain .thisheader {
+  position: relative;
+  height: 38px;
+  width: 100%;
+  padding-top: 11px;
+  padding-left: 28px;
+  background: #71beff;
+}
+.selectCourse .thismain .thisheader ul {
+  height: 100%;
+  overflow: hidden;
+}
+.selectCourse .thismain .thisheader ul li {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+}
+.selectCourse .thismain .thisheader ul .appmain {
+  height: 24px;
+  padding-left: 8px;
+  padding-right: 5px;
+  margin-right: 4px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  color: #000;
+}
+.selectCourse .thismain .thisheader ul .appmain .icon {
+  margin-left: 5px;
+}
+.selectCourse .thismain .thisheader ul .appmain.active {
+  border-bottom: 2px solid #1b56ff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #fff;
+  background-color: #1b8cff;
+}
+.selectCourse .thismain .thisheader ul .apptab {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 24px;
+  padding-left: 8px;
+  padding-right: 5px;
+  margin-right: 4px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  color: #000;
+  background-color: #fbfbfb;
+}
+.selectCourse .thismain .thisheader ul .apptab .icon {
+  margin-left: 5px;
+}
+.selectCourse .thismain .thisheader ul .apptab.active {
+  height: 27px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+}
+.selectCourse .thismain .thisbody ul {
+  margin-right: -18px;
+}
+.selectCourse .thismain .thisbody ul li {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  width: 190px;
+  height: 80px;
+  margin-right: 18px;
+  margin-bottom: 40px;
+  padding: 5px 8px 0;
+}
+.selectCourse .thismain .thisbody ul li .app-icon {
+  float: left;
+  width: 65px;
+  height: 65px;
+  font-size: 64px;
+}
+.selectCourse .thismain .thisbody ul li .app-icon .icon {
+  vertical-align: 0;
+}
+.selectCourse .thismain .thisbody ul li .app-name {
+  float: right;
+  width: 100px;
+  height: 65px;
+}
+.selectCourse .thismain .thisbody ul li .app-name .app-na {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.selectCourse .thismain .thisbody ul li .app-name .report {
+  margin-top: 5px;
+  font-size: 0;
+  color: #ffcd53;
+}
+.selectCourse .thismain .thisbody ul li .app-name .report .icon-star {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+  overflow: hidden;
+  margin-right: 5px;
+  color: #ffcd53;
+}
+.selectCourse .thismain .thisbody ul li:hover .app-detail {
+  z-index: 60;
+  opacity: 1;
+  -moz-box-shadow: rgba(210, 210, 210, 0.64) 0 0 10px;
+  -webkit-box-shadow: rgba(210, 210, 210, 0.64) 0 0 10px;
+  box-shadow: rgba(210, 210, 210, 0.64) 0 0 10px;
+}
+.selectCourse .thismain .thisbody ul li .app-detail {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  padding-top: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  -moz-transition: all 1.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 1.5s;
+  /* Safari and Chrome */
+  -o-transition: all 1.5s;
+  /* Opera */
+}
+.selectCourse .thismain .thisbody ul li .app-detail .app-detail-body {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.selectCourse .thismain .thisbody ul li .app-detail .app-detail-txt {
+  height: 60px;
+  padding: 3px 8px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  color: #808080;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.selectCourse .thismain .thisbody ul li .app-detail .app-detail-btn {
+  margin-top: 8px;
+  height: 26px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  background-color: #1b8cff;
+}

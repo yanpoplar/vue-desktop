@@ -1,0 +1,340 @@
+    @charset "UTF-8";
+    @FontFamily: 'Microsoft Yahei',
+    Helvetica,
+    Arial,
+    sans-serif;
+    @titleHeight: 42px;
+    .app {
+        position: absolute;
+        z-index: 20;
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        &.animating {
+            transition: all ease 0.5s;
+        }
+        .app-title {
+            position: relative;
+            background: #ffffff;
+            text-align: center;
+            line-height: @titleHeight;
+            height: @titleHeight;
+            font-size: 16px;
+            cursor: default;
+            color: #000;
+            .icon2 {
+                width: 2em;
+                height: 2em;
+                margin-right: 10px;
+                vertical-align: -.7em;
+            }
+        }
+        &.focus {
+            box-shadow: 0 0 20px rgba(179, 179, 179, 0.9);
+            z-index: 50;
+        }
+        .app-control {
+            @margin-top: 9px;
+            @margin-right: 6px;
+            position: absolute;
+            right: 24 - @margin-right;
+            top: 0;
+            height: @titleHeight;
+            .c {
+                display: block;
+                position: relative;
+                width: @titleHeight - 2*@margin-top;
+                height: @titleHeight - 2*@margin-top;
+                margin-top: @margin-top;
+                margin-right: @margin-right;
+                float: left;
+                border-radius: 3px;
+            }
+            .c1 {
+                background: #ffec4a;
+                &:before {
+                    box-sizing: border-box;
+                    @w: 12px;
+                    @h: 2px;
+                    content: "";
+                    display: none;
+                    position: absolute;
+                    height: @h;
+                    width: @w;
+                    left: ( @titleHeight - 2*@margin-top - @w ) /2;
+                    bottom: ( ( @titleHeight - 2*@margin-top - @h ) /2);
+                    background: #fff;
+                }
+                &:hover {
+                    &:before {
+                        display: block;
+                    }
+                }
+            }
+            .c2 {
+                background: #81e345;
+                .icon3 {
+                    display: none;
+                    box-sizing: border-box;
+                    @w: 20px;
+                    @b: 20px;
+                    position: absolute;
+                    height: @w;
+                    width: @w;
+                    left: ( @titleHeight - 2*@margin-top - @w ) /2;
+                    top: ( @titleHeight - 2*@margin-top - @w ) /2;
+                    color: #fff;
+                }
+                &:hover {
+                    .icon3 {
+                        display: block;
+                    }
+                }
+            }
+            .Rotate(@deg) {
+                transform: rotate(@deg);
+                -webkit-transform: rotate(@deg);
+                -moz-transform: rotate(@deg);
+            }
+            .c3 {
+                &:before,
+                &:after {
+                    @w: 14px;
+                    @h: 2px;
+                    content: "";
+                    display: none;
+                    position: absolute;
+                    height: @h;
+                    width: @w;
+                    left: ( @titleHeight - 2*@margin-top - @w ) /2;
+                    top: ( @titleHeight - 2*@margin-top - @h ) /2;
+                    background: #fff;
+                    .Rotate(45deg);
+                }
+                &:after {
+                    .Rotate(-45deg);
+                }
+                &:hover {
+                    &:before,
+                    &:after {
+                        display: block;
+                    }
+                }
+                background:#ff3640;
+            }
+        }
+        @reactionWidth: 4px;
+        .resize-handle {
+            position: absolute;
+        }
+        .resize-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .resize-handle-r {
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: @reactionWidth;
+            cursor: e-resize;
+        }
+        .resize-handle-b {
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: @reactionWidth;
+            cursor: s-resize;
+        }
+        .resize-handle-l {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: @reactionWidth;
+            cursor: w-resize;
+        }
+        .resize-handle-t {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: @reactionWidth;
+            cursor: n-resize;
+        }
+        .resize-handle-br {
+            right: 0;
+            bottom: 0;
+            width: @reactionWidth*2;
+            height: @reactionWidth*2;
+            cursor: se-resize;
+        }
+        .resize-handle-bl {
+            left: 0;
+            bottom: 0;
+            width: @reactionWidth*2;
+            height: @reactionWidth*2;
+            cursor: sw-resize;
+        }
+        .resize-handle-tr {
+            top: 0;
+            right: 0;
+            width: @reactionWidth*2;
+            height: @reactionWidth*2;
+            cursor: ne-resize;
+        }
+        .resize-handle-tl {
+            top: 0;
+            left: 0;
+            width: @reactionWidth*2;
+            height: @reactionWidth*2;
+            cursor: nw-resize;
+        }
+    }
+
+    .thismain {
+        position: relative;
+        height: 100%;
+        .thisheader {
+            @headerHeight: 38px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: @headerHeight;
+            width: 100%;
+            padding-top: 11px;
+            padding-left: 28px;
+            background: #71beff;
+            ul {
+                height: 100%;
+                overflow: hidden;
+                li {
+                    display: inline-block;
+                    height: 24px;
+                    padding-left: 8px;
+                    padding-right: 5px;
+                    margin-right: 4px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    vertical-align: top;
+                    cursor: pointer;
+                }
+                .appmain {
+                    .icon1 {
+                        width: 24px;
+                        height: 24px;
+                        color: #fff;
+                        fill: currentColor;
+                        overflow: hidden;
+                    }
+                    &:hover {
+                        .icon1 {
+                            color: #1b8cff;
+                        }
+                    }
+                    &.active {
+                        .icon1 {
+                            color: #1b8cff;
+                        }
+                    }
+                }
+                .apptab {
+                    border-radius: 3px;
+                    color: #000;
+                    background-color: #fbfbfb;
+                    .tabname {
+                        vertical-align: middle;
+                    }
+                    .icon2 {
+                        width: 14px;
+                        height: 14px;
+                        vertical-align: middle;
+                        color: #000;
+                        fill: currentColor;
+                        overflow: hidden;
+                    }
+                    &.active {
+                        height: 27px;
+                        border-bottom-left-radius: 0;
+                        border-bottom-right-radius: 0;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .thisbody {
+            box-sizing: border-box;
+            height: 100%;
+            padding: 38px 0 0;
+            .app2-list {
+                box-sizing: border-box;
+                padding: 0 24px;
+                margin-right: -75px;
+                overflow: hidden;
+                li {
+                    box-sizing: border-box;
+                    float: left;
+                    width: 110px;
+                    margin-right: 75px;
+                    margin-top: 24px;
+                    .app-icon {
+                        width: 100%;
+                        padding: 0 10px;
+                        .icon-body {
+                            width: 100%;
+                            height: 76px;
+                            font-size: 70px;
+                            text-align: center;
+                            .icon {
+                                vertical-align: 0;
+                            }
+                        }
+                    }
+                    .app-name {
+                        width: 100%;
+                        margin-top: 7px;
+                        text-align: center;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #000;
+                    }
+                    &:hover {
+                        .icon-body {
+                            border-radius: 5px;
+                            background-color: rgba(0, 0, 0, 0.2);
+                        }
+                        .app-name {
+                            border-radius: 5px;
+                            color: #fff;
+                            background-color: #000;
+                        }
+                    }
+                }
+            }
+            .appcon {
+                height: 100%;
+            }
+        }
+    }
+
+    .app-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 38px;
+        background-color: #fafafa;
+        .el-pagination {
+            margin-top: 8px;
+            padding: 0;
+            padding-right: 24px;
+            text-align: right;
+        }
+        .log-import {
+            position: absolute;
+            top: 0;
+            left: 45px;
+            height: 38px;
+            padding-top: 4px;
+        }
+    }

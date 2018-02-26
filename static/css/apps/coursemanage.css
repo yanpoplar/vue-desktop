@@ -1,0 +1,562 @@
+@charset "UTF-8";
+.coursemanage .search-block .search-val {
+  width: 194px;
+  height: 30px;
+}
+.coursemanage .search-block .search-val .el-input {
+  height: 100%;
+}
+.coursemanage .search-block .search-val .el-input__inner {
+  height: 100%;
+}
+.coursemanage .search-block .search-type {
+  width: 160px;
+  height: 30px;
+  margin-left: 15px;
+}
+.coursemanage .search-block .search-type .el-select {
+  height: 100%;
+}
+.coursemanage .search-block .search-type .el-input {
+  height: 100%;
+}
+.coursemanage .search-block .search-type .el-input__inner {
+  height: 100%;
+}
+.coursemanage .page-step {
+  height: 100%;
+  padding: 50px 24px 38px 44px;
+}
+.coursemanage .page-step .singleSetPage {
+  padding-top: 20px;
+}
+.step-page {
+  padding-bottom: 50px;
+}
+.step-page .steps-footer {
+  height: 50px;
+  padding-top: 15px;
+}
+.step-page .steps-tit-l {
+  padding-left: 71px;
+}
+.step-page .steps-tit-r {
+  padding-right: 71px;
+}
+.step-page .steps-tit-l-l {
+  float: left;
+  width: 50%;
+  padding-left: 71px;
+  padding-right: 71px;
+}
+.step-page .steps-tit-l-r {
+  float: left;
+  width: 50%;
+  padding-left: 71px;
+  padding-right: 71px;
+}
+.step-page .step-one {
+  top: 30px;
+  left: 0;
+  width: 142px;
+}
+.step-page .step-two {
+  top: 30px;
+  left: 25%;
+  width: 142px;
+  margin-left: -35px;
+}
+.step-page .step-three {
+  top: 30px;
+  left: 50%;
+  width: 142px;
+  margin-left: -71px;
+}
+.step-page .step-four {
+  top: 30px;
+  left: 75%;
+  width: 142px;
+  margin-left: -106px;
+}
+.step-page .step-five {
+  top: 30px;
+  right: 0;
+  width: 142px;
+}
+.step-page .steps-main-one {
+  overflow: hidden;
+  overflow-y: auto;
+}
+.step-page .steps-main-one .dividing {
+  width: 86%;
+  margin: 0 auto;
+}
+.step-page .steps-main-one .dividing .adminCourse,
+.step-page .steps-main-one .dividing .teachCourse {
+  width: 100%;
+}
+.step-page .steps-main-one .dividing .adminCourse .tit,
+.step-page .steps-main-one .dividing .teachCourse .tit {
+  width: 100%;
+  height: 44px;
+  padding-left: 20px;
+  line-height: 44px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: left;
+  color: #fff;
+}
+.step-page .steps-main-one .dividing .adminCourse .tit {
+  background-color: #1b8cff;
+}
+.step-page .steps-main-one .dividing .teachCourse .tit {
+  background-color: #71beff;
+}
+.step-page .steps-main-one .dividing .adminCourse-main,
+.step-page .steps-main-one .dividing .teachCourse-main {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.step-page .steps-main-one .dividing .adminCourse-main .course-main-l,
+.step-page .steps-main-one .dividing .teachCourse-main .course-main-l,
+.step-page .steps-main-one .dividing .adminCourse-main .course-main-r,
+.step-page .steps-main-one .dividing .teachCourse-main .course-main-r {
+  padding-left: 20px;
+}
+.step-page .steps-main-one .dividing .adminCourse-main .course-main-l,
+.step-page .steps-main-one .dividing .teachCourse-main .course-main-l {
+  width: 50%;
+  border: 1px solid #f5f5f5;
+  border-right-color: transparent;
+  border-top: none;
+}
+.step-page .steps-main-one .dividing .adminCourse-main .course-main-l .name-txt,
+.step-page .steps-main-one .dividing .teachCourse-main .course-main-l .name-txt {
+  user-select: none;
+  margin-bottom: 6px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: left;
+  color: #71beff;
+}
+.step-page .steps-main-one .dividing .adminCourse-main .course-main-l:hover,
+.step-page .steps-main-one .dividing .teachCourse-main .course-main-l:hover {
+  border-color: #1b8cff;
+}
+.step-page .steps-main-one .dividing .adminCourse-main .course-main-r,
+.step-page .steps-main-one .dividing .teachCourse-main .course-main-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #f5f5f5;
+  border-top: none;
+}
+.step-page .steps-main-one .dividing .adminCourse-main .course-main-r .name-txt,
+.step-page .steps-main-one .dividing .teachCourse-main .course-main-r .name-txt {
+  user-select: none;
+  margin-bottom: 6px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: left;
+  color: #1b8cff;
+}
+.step-page .steps-main-one .dividing .adminCourse-main .course-main-r:hover,
+.step-page .steps-main-one .dividing .teachCourse-main .course-main-r:hover {
+  border-color: #1b8cff;
+}
+.step-page .steps-main-one .dividing .adminCourse-main .course-main-r .course-list > li,
+.step-page .steps-main-one .dividing .teachCourse-main .course-main-r .course-list > li {
+  background-color: #1b8cff;
+}
+.step-page .steps-main-one .dividing .adminCourse-main .course-list,
+.step-page .steps-main-one .dividing .teachCourse-main .course-list {
+  width: 100%;
+  min-height: 210px;
+  overflow: hidden;
+}
+.step-page .steps-main-one .dividing .adminCourse-main .course-list > li,
+.step-page .steps-main-one .dividing .teachCourse-main .course-list > li {
+  display: inline-block;
+  min-width: 75px;
+  height: 26px;
+  padding: 0 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #71beff;
+  vertical-align: middle;
+}
+.step-page .steps-main-two {
+  overflow: hidden;
+  overflow-y: auto;
+}
+.step-page .steps-main-two .dividing {
+  width: 86%;
+  margin: 0 auto;
+}
+.step-page .steps-main-two .dividing .teachCourse {
+  width: 100%;
+  margin-top: 15px;
+}
+.step-page .steps-main-two .dividing .teachCourse .tit {
+  width: 100%;
+  height: 44px;
+  padding-left: 20px;
+  line-height: 44px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: left;
+  color: #fff;
+}
+.step-page .steps-main-two .dividing .teachCourse .tit {
+  background-color: #71beff;
+}
+.step-page .steps-main-two .dividing .teachCourse-main {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.step-page .steps-main-two .dividing .teachCourse-main .course-main-l,
+.step-page .steps-main-two .dividing .teachCourse-main .course-main-r {
+  padding-left: 20px;
+}
+.step-page .steps-main-two .dividing .teachCourse-main .course-main-l {
+  width: 50%;
+  border: 1px solid #f5f5f5;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+.step-page .steps-main-two .dividing .teachCourse-main .course-main-l .name-txt {
+  margin-bottom: 6px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: left;
+  color: #71beff;
+}
+.step-page .steps-main-two .dividing .teachCourse-main .course-main-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #f5f5f5;
+  border-top-color: transparent;
+}
+.step-page .steps-main-two .dividing .teachCourse-main .course-main-r .name-txt {
+  margin-bottom: 6px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: left;
+  color: #1b8cff;
+}
+.step-page .steps-main-two .dividing .teachCourse-main .course-main-r .course-list > li {
+  background-color: #1b8cff;
+}
+.step-page .steps-main-two .dividing .teachCourse-main .course-list {
+  width: 100%;
+  min-height: 210px;
+  overflow: hidden;
+}
+.step-page .steps-main-two .dividing .teachCourse-main .course-list > li {
+  display: inline-block;
+  min-width: 75px;
+  height: 26px;
+  padding: 0 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #71beff;
+  vertical-align: middle;
+}
+.step-page .steps-main-two .dividing .js-teachCourse .course-main-l:hover {
+  border-color: #1b8cff;
+}
+.step-page .steps-main-two .dividing .js-teachCourse .course-main-r:hover {
+  border-color: #1b8cff;
+}
+.step-page .steps-main-three {
+  position: relative;
+  padding-top: 35px;
+}
+.step-page .steps-main-three .row {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.step-page .steps-main-three .select-page {
+  position: relative;
+  height: 100%;
+  padding-top: 50px;
+}
+.step-page .steps-main-three .select-page .btn-row {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.step-page .steps-main-three .select-page .btn-row .search-block {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.step-page .steps-main-three .select-page .btn-row .search-block .txt {
+  width: 80px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: right;
+  color: #000;
+  vertical-align: middle;
+}
+.step-page .steps-main-three .file-page {
+  position: relative;
+  height: 100%;
+}
+.step-page .steps-main-three .file-page .steps-main-one {
+  position: relative;
+  padding-bottom: 50px;
+}
+.step-page .steps-main-three .file-page .steps-main-one .steps-main-con {
+  overflow: hidden;
+}
+.step-page .steps-main-three .file-page .steps-main-one .steps-footer-one {
+  padding-top: 10px;
+  text-align: center;
+}
+.step-page .steps-main-three .file-page .steps-main-two {
+  position: relative;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.step-page .steps-main-three .file-page .steps-main-two .steps-footer-two {
+  padding-top: 0;
+}
+.step-page .steps-main-three .steps-main-con {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.step-page .steps-main-four .file-page {
+  position: relative;
+  height: 100%;
+}
+.step-page .steps-main-four .file-page .steps-main-one {
+  position: relative;
+  padding-bottom: 50px;
+}
+.step-page .steps-main-four .file-page .steps-main-one .steps-main-con {
+  overflow: hidden;
+}
+.step-page .steps-main-four .file-page .steps-main-one .steps-footer-one {
+  padding-top: 10px;
+  text-align: center;
+}
+.step-page .steps-main-four .file-page .steps-main-two {
+  position: relative;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.step-page .steps-main-four .file-page .steps-main-two .steps-footer-two {
+  padding-top: 0;
+}
+.step-page .steps-main-five .success-info {
+  margin-top: 20%;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+}
+.step-page .steps-main-five .success-info span {
+  color: #ff3640;
+}
+.page-repeort {
+  position: relative;
+  height: 100%;
+  padding: 240px 12px 0 12px;
+  overflow: hidden;
+}
+.page-repeort .circle-list {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.page-repeort .circle-list .circle-img {
+  position: relative;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.page-repeort .circle-list .circle-img .text-block {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  width: 300px;
+  margin-top: -28px;
+  margin-left: -150px;
+}
+.page-repeort .circle-list .circle-img .text-block .txt {
+  width: 100%;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #79d242;
+}
+.page-repeort .circle-list .circle-img .text-block .num {
+  font-size: 24px;
+}
+.page-repeort .circle-list .circle-img .text-block .txt-two {
+  color: #71beff;
+}
+.page-repeort .circle-list .circle-img .text-block .txt-three {
+  color: #ffcd53;
+}
+.page-repeort .circle-list .circle-img .time-tit {
+  width: 100%;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #656565;
+}
+.page-repeort .circle-list .circle-img .time-val {
+  width: 100%;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #656565;
+}
+.page-repeort .row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 100%;
+}
+.page-repeort .row .row-l,
+.page-repeort .row .row-r {
+  height: 100%;
+}
+.group-detail {
+  width: 90%;
+  margin: 0 auto;
+}
+.group-detail .my-header {
+  overflow: hidden;
+}
+.group-detail .my-header li {
+  float: left;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+  text-align: center;
+}
+.group-detail .my-body {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.group-detail .my-table {
+  width: 100%;
+}
+.group-detail .my-table:last-child .tit {
+  border: 1px solid #1b8cff;
+}
+.group-detail .my-table .tit {
+  overflow: hidden;
+  border: 1px solid #1b8cff;
+  border-bottom: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+}
+.group-detail .my-table .tit .row-l {
+  width: 15%;
+  text-align: center;
+}
+.group-detail .my-table .tit .row-r i {
+  margin-right: 20px;
+  color: #000;
+}
+.group-detail .my-table .active {
+  background-color: #1b8cff;
+  color: #fff;
+}
+.group-detail .my-table .active .row-r i {
+  color: #fff;
+}
+.group-detail .my-table .my-data {
+  border: 1px solid #f5f5f5;
+  border-top: none;
+}
+.group-detail .my-table .my-data li {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.group-detail .my-table .my-data li:last-child {
+  margin-bottom: 0;
+}
+.group-detail .my-table .my-data li .data-list {
+  width: 100%;
+  overflow: hidden;
+}
+.group-detail .my-table .my-data li .data-list li {
+  float: left;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000;
+}
+.group-detail .my-table .my-data li .data-list li.class-name {
+  padding: 6px 0;
+}
+.group-detail .my-table .my-data li .data-list li.class-name .name-val {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  background-color: #1ab6ff;
+}
+.group-detail .my-table .my-data li .data-list li.per-bar {
+  padding: 15px 0;
+}
+.group-detail .my-table .my-data li .data-list li.per-bar .bigbar {
+  width: 80%;
+  height: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+}
+.group-detail .my-table .my-data li .data-list li.per-bar .bigbar .smallbar {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #1ab6ff;
+}

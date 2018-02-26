@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.divideclass .page-divide {
+  width: 100%;
+  height: 100%;
+  padding-top: 51px;
+}
+.divideclass .page-divide .con-header {
+  padding: 20px 24px 0;
+}
+.divideclass .page-divide .con-main {
+  padding: 10px 24px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.divideclass .page-divide .con-main .txt {
+  padding: 15px 0;
+}
+.divideclass .page-divide .con-main .txt span {
+  padding: 0 15px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #000;
+}
+.divideclass .page-divide .con-main .txt .color-red {
+  color: #ff3640;
+}
+.divideclass .tit span {
+  margin-right: 8px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+.divideclass .class-list {
+  position: relative;
+  right: -15px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+.divideclass .class-list li.class-item {
+  position: relative;
+  float: left;
+  width: 183px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  box-shadow: rgba(204, 204, 204, 0.73) 0 0 0;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  /* Firefox 4 */
+  -webkit-transition: all 1s;
+  /* Safari and Chrome */
+  -o-transition: all 1s;
+  /* Opera */
+}
+.divideclass .class-list li.class-item .item-detail {
+  padding-left: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #fcfcfc;
+}
+.divideclass .class-list li.class-item .item-detail .item-tit {
+  width: 120px;
+  height: 36px;
+  padding-left: 5px;
+  border-bottom: 1px dashed #b9b9b9;
+  line-height: 36px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #000;
+}
+.divideclass .class-list li.class-item .item-detail .item-main {
+  padding: 10px 5px;
+}
+.divideclass .class-list li.class-item .item-detail .item-main .item-main-txt {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  color: #4c4c4c;
+}
+.divideclass .class-list li.class-item .item-btn {
+  width: 100%;
+  height: 26px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  background-color: #71beff;
+  cursor: pointer;
+}
+.divideclass .class-list li.class-item:hover {
+  box-shadow: rgba(204, 204, 204, 0.73) 0 0 10px;
+  -moz-box-shadow: rgba(204, 204, 204, 0.73) 0 0 10px;
+  -webkit-box-shadow: rgba(204, 204, 204, 0.73) 0 0 10px;
+  -o-box-shadow: rgba(204, 204, 204, 0.73) 0 0 10px;
+}
+.divideclass .class-list li.class-item .people {
+  position: absolute;
+  top: -7px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  padding-right: 6px;
+  padding-top: 8px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  background: url("../../img/peoplenum.png") no-repeat center;
+  background-size: 100%;
+}
+.divideclass .page-look {
+  height: 100%;
+  padding-top: 51px;
+}
+.divideclass .page-look .con-header {
+  padding: 20px 24px 0;
+}
+.divideclass .page-look .con-main {
+  padding: 10px 24px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

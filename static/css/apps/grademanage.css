@@ -1,0 +1,142 @@
+@charset "UTF-8";
+.grademanage .search-block .search-val {
+  width: 194px;
+  height: 30px;
+}
+.grademanage .search-block .search-val .el-input {
+  height: 100%;
+}
+.grademanage .search-block .search-val .el-input__inner {
+  height: 100%;
+}
+.grademanage .search-block .search-type {
+  width: 160px;
+  height: 30px;
+  margin-left: 15px;
+}
+.grademanage .search-block .search-type .el-select {
+  height: 100%;
+}
+.grademanage .search-block .search-type .el-input {
+  height: 100%;
+}
+.grademanage .search-block .search-type .el-input__inner {
+  height: 100%;
+}
+.grademanage .page-import {
+  height: 100%;
+  padding: 50px 24px 38px 44px;
+}
+.grademanage .page-import .select-page {
+  position: relative;
+  height: 100%;
+  padding-top: 70px;
+}
+.grademanage .page-import .select-page .btn-row {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.grademanage .page-import .select-page .btn-row .search-block {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.grademanage .page-import .select-page .btn-row .search-block .search-type {
+  float: left;
+}
+.grademanage .page-import .select-page .btn-row .search-block .search-val {
+  float: left;
+}
+.grademanage .page-import .select-page .btn-row .btn-block {
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+.file-page .steps-tit-l {
+  padding-left: 124px;
+  padding-right: 55px;
+}
+.file-page .steps-tit-r {
+  padding-left: 55px;
+  padding-right: 124px;
+}
+.file-page .step-one {
+  top: 30px;
+  left: 0;
+  width: 124px;
+}
+.file-page .step-two {
+  top: 30px;
+  left: 50%;
+  width: 110px;
+  margin-left: -55px;
+}
+.file-page .step-three {
+  top: 30px;
+  right: 0;
+  width: 124px;
+}
+.file-page .steps-main-one {
+  padding-top: 54px;
+}
+.file-page .steps-main-one .steps-main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  padding-left: 20px;
+  background-color: #71beff;
+}
+.file-page .steps-main-one .steps-main-header a {
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 54px;
+  color: #fff;
+}
+.file-page .steps-main-one .steps-main-header a:hover {
+  color: #1b8cff;
+}
+.file-page .steps-main-one .steps-main-con {
+  width: 100%;
+  height: 100%;
+}
+.file-page .steps-footer-one {
+  padding-top: 55px;
+  text-align: right;
+}
+.file-page .steps-footer-two .data-num {
+  height: 55px;
+  font-size: 18px;
+  line-height: 55px;
+  text-align: left;
+  color: #000;
+}
+.file-page .steps-footer-two .data-num .num {
+  display: inline-block;
+  height: 20px;
+  padding: 0 15px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background-color: #1b8cff;
+}
+.file-page .steps-main-three .success-info {
+  margin-top: 20%;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+}
+.file-page .steps-main-three .success-info span {
+  color: #ff3640;
+}
+.file-page .steps-footer-three {
+  padding-top: 55px;
+  text-align: right;
+}

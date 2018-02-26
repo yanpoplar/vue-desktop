@@ -1,0 +1,254 @@
+@charset "UTF-8";
+.app-store {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 924px;
+  height: 676px;
+  z-index: 50;
+  margin-left: -462px;
+  margin-top: -338px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.app-store .app-title {
+  position: relative;
+  background: #ffffff;
+  text-align: center;
+  line-height: 42px;
+  height: 42px;
+  font-size: 16px;
+  cursor: default;
+  color: #000;
+}
+.app-store .app-title .icon2 {
+  width: 2em;
+  height: 2em;
+  margin-right: 10px;
+  vertical-align: -0.7em;
+}
+.app-store .app-control {
+  position: absolute;
+  right: 18px;
+  top: 0;
+  height: 42px;
+}
+.app-store .app-control .c {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-top: 9px;
+  margin-right: 6px;
+  float: left;
+  border-radius: 3px;
+}
+.app-store .app-control .c3 {
+  background: #ff3640;
+}
+.app-store .app-control .c3:before,
+.app-store .app-control .c3:after {
+  content: "";
+  display: none;
+  position: absolute;
+  height: 2px;
+  width: 14px;
+  left: 5px;
+  top: 11px;
+  background: #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+.app-store .app-control .c3:after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+.app-store .app-control .c3:hover:before,
+.app-store .app-control .c3:hover:after {
+  display: block;
+}
+.app-store.focus {
+  box-shadow: 0 0 20px rgba(179, 179, 179, 0.9);
+}
+.store-header {
+  position: relative;
+  height: 38px;
+  width: 100%;
+  padding-top: 8px;
+  text-align: center;
+  background: #71beff;
+}
+.store-header ul {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+}
+.store-header ul li {
+  box-sizing: border-box;
+  float: left;
+  width: 72px;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  text-align: center;
+  line-height: 34px;
+  color: #000;
+  cursor: pointer;
+}
+.store-header ul li.active {
+  border-bottom: 2px solid #1b56ff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #fff;
+  background-color: #1b8cff;
+}
+.store-header .resSearch {
+  position: absolute;
+  top: 9px;
+  right: 24px;
+  width: 154px;
+  height: 24px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.store-header .resSearch input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-left: 26px;
+  font-size: 14px;
+  color: #999;
+}
+.store-header .resSearch .search-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 100%;
+  font-size: 14px;
+  color: #2390ff;
+}
+.store-header .resSearch .search-icon .icon {
+  vertical-align: -0.35em;
+}
+.store-body {
+  padding: 20px 40px 0;
+}
+.store-body ul {
+  margin-right: -18px;
+}
+.store-body ul li {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  width: 190px;
+  height: 80px;
+  margin-right: 18px;
+  margin-bottom: 40px;
+  padding: 5px 8px 0;
+}
+.store-body ul li .app-icon {
+  float: left;
+  width: 65px;
+  height: 65px;
+  font-size: 64px;
+}
+.store-body ul li .app-icon .icon {
+  vertical-align: 0;
+}
+.store-body ul li .app-name {
+  float: right;
+  width: 100px;
+  height: 65px;
+}
+.store-body ul li .app-name .app-na {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.store-body ul li .app-name .report {
+  margin-top: 5px;
+  font-size: 0;
+  color: #ffcd53;
+}
+.store-body ul li .app-name .report .icon-star {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+  overflow: hidden;
+  margin-right: 5px;
+  color: #ffcd53;
+}
+.store-body ul li:hover .app-detail {
+  z-index: 60;
+  opacity: 1;
+  -moz-box-shadow: rgba(210, 210, 210, 0.64) 0 0 10px;
+  -webkit-box-shadow: rgba(210, 210, 210, 0.64) 0 0 10px;
+  box-shadow: rgba(210, 210, 210, 0.64) 0 0 10px;
+}
+.store-body ul li .app-detail {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  padding-top: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  -moz-transition: all 1.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 1.5s;
+  /* Safari and Chrome */
+  -o-transition: all 1.5s;
+  /* Opera */
+}
+.store-body ul li .app-detail .app-detail-body {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.store-body ul li .app-detail .app-detail-txt {
+  height: 60px;
+  padding: 3px 8px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  color: #808080;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.store-body ul li .app-detail .app-detail-btn {
+  margin-top: 8px;
+  height: 26px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  background-color: #1b8cff;
+}
+.store-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 38px;
+  background-color: #fafafa;
+}
+.store-footer .el-pagination {
+  margin-top: 8px;
+  padding: 0;
+  padding-right: 24px;
+  text-align: right;
+}
